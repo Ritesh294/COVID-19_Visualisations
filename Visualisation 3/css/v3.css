@@ -1,0 +1,115 @@
+﻿
+
+.table td {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    background-clip: padding-box;
+    color: black;
+    width: 100px;
+    font-family: 'Raleway';
+    font-size: 2em;
+}
+#tableTitle {
+    font-family: 'Raleway';
+    font-size: 1.8em;
+    text-align:center;
+    margin-bottom: 5px;
+}
+th {
+    position: sticky;
+    background-color: lightblue;
+    top: 0;
+    font-family: 'Raleway';
+    font-size: 1.5em;
+    z-index: 2;
+}
+
+tr{
+    font-family: sans-serif;
+    height: 26px;
+}
+
+tr:nth-child(even) {
+    background: white;
+}
+
+#dataTable {
+    border-collapse: collapse;
+    width: 99%;
+    background-color: lightblue;
+}
+
+body {
+    background-color: white;
+    height: 100%;
+    margin-bottom: 0px;
+    overflow-y: hidden;
+}
+
+html{
+    height: 100%;
+}
+
+#graphTitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 2.5em;
+}
+
+#main {  
+    height:22em;
+    width:100%;
+    display: flex;
+    justify-content:center;
+}
+
+#graph{
+    height: 100%;
+    float: left;
+}
+
+#countrySelect{
+    height: 100%;
+    width: 15%;
+}
+
+#tableContainer {
+    height: 42%;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ddd;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 0 1 auto;
+}
+
+#countryList{
+    width:150px;
+    border:solid;
+}
+
+#topBar {
+    background: #f2f2f2;
+    border-bottom-color: #1874CD;
+    height: 5vh;
+    text-align: center;
+    color: black;
+    font-size: 2.3em;
+    box-shadow: 3px 5px 9px #b7b7b7;
+    font-family: 'Raleway';
+    padding-top: 0.5%;
+}
+
+svg{
+    box-shadow: 3px 5px 9px #b7b7b7;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+g{
+    font-family: 'Raleway';
+    font-size: 0.9em;
+    color: black;
+}

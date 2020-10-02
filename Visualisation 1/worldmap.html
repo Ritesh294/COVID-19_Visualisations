@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Covid-19 World Map</title>
+        <link rel="stylesheet" href="css/tooltip.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css/svgMap.min.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css/world.css" type="text/css" media="screen"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+        <script src="data/formatted.js"></script>
+        <script src="data/populations.js"></script>
+
+        <script src="js/canvasjs/canvasjs.min.js"></script>
+        <script src="js/graph.js"></script>
+        <script src="js/svgMap.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body onload="load()">
+        <div id="mapContainer">
+            <div id="title">Global Covid-19 Data</div>
+            <div id="world-map"></div>
+        </div>
+        
+        <div id="dataControls">
+            <div id="controlsTitle">Controls</div>
+            <input type="radio" id="none" name="gender" value="none" checked="true" class="scales" onclick="scaleChange('Normal')">
+            <label for="none">Normal</label><br>
+            <input type="radio" id="log" name="gender" value="log" class="scales" onclick="scaleChange('Log')">
+            <label for="log">Log Scale</label><br>
+            <input type="radio" id="perCapita" name="gender" value="capita" class="scales" onclick="scaleChange('Per 100,000')">
+            <label for="perCapita">Per 100,000</label><br>
+            <!--<div id="currentDate"><b>Date:</b> 23 September</div>-->
+        </div>
+        <div id="daySelect">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="264" value="264" class="slider" id="slider" oninput="dateChanged()">
+            </div>
+            <div id="sliderdate">23 September</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+body{
+    user-select: none;
+}
+
+#mapContainer{
+    width: 90vw;
+    position: absolute;
+    margin-left: 5vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#title{
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 2.3em;
+    position: absolute;
+    background: rgba(0,0,0,0);
+    z-index: 1;
+    width: 25%;
+    margin-left: 37%;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+#dataControls{
+    width: 9%;
+    position: absolute;
+    left: 11vw;
+    background-color: white;
+    padding: 1% 0.5% 1% 1%;
+    font-family: 'Raleway';
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    font-size:1.2em;
+}
+
+.scales{
+    margin-bottom:10px;
+}
+
+#controlsTitle{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#currentDate{
+    padding-top: 7px;
+}
+
+#daySelect{
+    position: absolute;
+    width: 99.5%;
+}
+
+#sliderdate{
+    width: fit-content;
+    font-family: 'Raleway';
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.slidecontainer{
+    width: 90%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 5%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }

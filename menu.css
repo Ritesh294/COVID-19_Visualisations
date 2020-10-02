@@ -1,0 +1,36 @@
+﻿body {
+    background-color: white;
+    height: 100%;
+    margin-bottom: 0px;
+    overflow-y: hidden;
+}
+
+html{
+    height: 100%;
+}
+
+
+#topBar {
+    background: #f2f2f2;
+    border-bottom-color: #1874CD;
+    height: 5vh;
+    text-align: center;
+    color: black;
+    font-size: 2.3em;
+    box-shadow: 3px 5px 9px #b7b7b7;
+    font-family: 'Raleway';
+    padding-top: 0.5%;
+}
+
+.buttons {
+    text-align: center;
+    width: 600px;
+    height: 200px;
+    font-family: 'Raleway';
+    font-size:2em;
+}
+
+#buttonDiv{
+    padding-top:100px;
+    text-align:center;
+}

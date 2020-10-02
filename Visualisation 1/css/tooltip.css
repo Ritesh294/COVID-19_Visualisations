@@ -1,0 +1,25 @@
+#graphContainer{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    font-family: 'Raleway';
+}
+
+#svgMap-tooltip-graph{
+    width: 30vw;
+    height: 25vh;
+    margin-top: 10px;
+}
+
+.svgMap-tooltip-content{
+    font-family: 'Raleway';
+}
+
+.svgMap-tooltip-content-wrapper{
+    font-family: 'Raleway';
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.26);
+}
+
+table{
+    font-size: 1.2em;
+}

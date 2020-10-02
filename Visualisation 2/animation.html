@@ -1,0 +1,42 @@
+<html>
+    <header>
+        <link rel="stylesheet" href="css/animation.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+        <script src="canvasjs/canvasjs.min.js"></script>
+
+        <script src="data/america-data.js"></script>
+        <script src="data/names.js"></script>
+        <script src="js/animateNames.js"></script>
+        <script src="js/animate.js"></script>
+    </header>
+    <body onload="onLoad()">
+        <div id="title">
+            <div id="titleText">Covid-19: United States of America</div>
+            <div id="notesDiv">
+                <p class="notes"><b>Colour:</b> The brighter red, the more infected that group is</p>
+                <p class="notes"><b>Each Circle:</b> 500,000 people</p>
+            </div>
+        </div>
+        <div id="info">
+            <div id="titleContainer">
+                <div id="quote">"One death is a tragedy, a million is a statistic..."</div>
+                <div id="canvasTitle">In Memory of Each and Every One.</div>
+            </div>
+            <canvas id="listOfNames"></canvas>
+            <div id="timeTaken">For every name to scroll by will take over 20 days.</div>
+            <hr>
+            <div id="graphContainer"></div>
+            <div id="playPause" onclick="playPause()">Play/Pause</div>
+        </div>
+        <div id="canvasContainer">
+            <div id="numbers">
+                <p id="date" class="numbers"></p>
+                <p id="infected" class="numbers"></p>
+                <p id="percent" class="numbers"></p>
+                <p id="dead" class="numbers"></p>
+            </div>
+            <canvas id="canvas"></canvas>
+        </div>
+    </body>
+</html>
